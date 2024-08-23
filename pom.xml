@@ -70,7 +70,6 @@
 					<execution>
 						<goals>
 							<goal>convert</goal>
-							<goal>run</goal>
 						</goals>
 					</execution>
 				</executions>

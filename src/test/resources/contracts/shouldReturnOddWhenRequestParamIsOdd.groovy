@@ -1,17 +1,13 @@
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
-    description "should return odd when number input is odd"
+    description "should return a 204 for a valid request"
     request {
         method GET()
-        url("/validate/prime-number") {
-            queryParameters {
-                parameter("number", "1")
-            }
-        }
+        url("/firms/${consumer(regex('\\d+'))}")
     }
     response {
-        body("Odd")
-        status 200
+        // This won't show anything in a browser
+        status 204
     }
 }
