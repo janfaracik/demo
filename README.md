@@ -29,3 +29,6 @@ This project fulfills the following requirements:
 
 ### How are we expecting the service stub to work?
 The payload from our API will/could be different every request (e.g. we don't always send all fields), are we expecting the stub to accept any body, and just return a 204?
+
+#### Follow up to this, does our lambda request any firm data after the Persistence API has been called?
+If we stub the Persistence API the requested changes to firm data will not happen
