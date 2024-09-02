@@ -1,6 +1,6 @@
 # Persistence API Integration Demo
 
-![image (1).png](image%20%281%29.png)
+![Diagram](diagram.png)
 
 This project demonstrates the use of Spring Cloud Contract to create a mock server that can be used in testing and development. The mock server is designed to simulate the Persistence API, allowing us to validate interactions between our Lambda function and the Persistence API using predefined contracts.
 
